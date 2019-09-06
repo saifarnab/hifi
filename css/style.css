@@ -1,0 +1,476 @@
+/* 
+    Project: 02
+    Created on : Jan 8, 2017, 12:52:51 AM
+    Author     : Saif Arnab
+    Email: saifornab@gmail.com
+*/
+@font-face {
+    font-family: lato;
+    src: url("../fonts/Lato-Bold.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: lato;
+    src: url("../fonts/Lato-Bold.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: latoR;
+    src: url("../fonts/Lato-Regular.ttf") /* EOT file for IE */
+}
+@font-face {
+    font-family: latoR;
+    src: url("../fonts/Lato-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: latoT;
+    src: url("../fonts/Lato-Thin.ttf") /* EOT file for IE */
+}
+@font-face {
+    font-family: latoT;
+    src: url("../fonts/Lato-Thin.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: arial;
+    src: url("../fonts/arial.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: arial;
+    src: url("../fonts/arial.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: tahoma;
+    src: url("../fonts/Tahoma.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: tahoma;
+    src: url("../fonts/Tahoma.ttf") /* TTF file for CSS3 browsers */
+}
+
+body{
+    /*    background: #1F1F1F;*/
+}
+.continer_fluid{
+    width: 100%;
+    height: auto;
+}
+.continer{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+h1,h4{
+    font-family: lato,arial,tahoma,sans-serif;
+}
+.header_wrapper{
+    background: #111111;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+.header{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.header_logo{
+    float: left;
+}
+.header_logo a  img{
+    max-width: 100%;
+}
+.header_navigation{
+    float: left;
+    margin-top: 10px;
+}
+.header_navigation > ul{
+    list-style: none;
+    margin-left: 10px;
+}
+.header_navigation > ul > li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header_navigation > ul > li > a{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #979797;
+    text-decoration: none;
+    transition: all .5s;
+}
+.header_navigation > ul > li > a:hover{
+    color: #9B8143;
+}
+.header_navigation > ul > li:first-child > a{
+    color: #9B8143;
+}
+.header_navigation > ul > li:last-child > a{
+    color: #FFFFFF;
+}
+.header_favicon{
+    float: right;
+}
+.header_favicon > ul{}
+.header_favicon > ul > li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+.header_favicon > ul > li > a > i{
+    color: #979797;
+}
+.header_favicon > ul > li > a > img{
+    max-height: 100%;
+    height: 17px;
+}
+.header_favicon > a > p{
+    background: #9B8143;
+    color: white;
+    font-family: cursive;
+    font-size: 13px;
+    display: inline-block;
+    padding: 1px 4px;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    top: 15px;
+    right: 3%;
+}
+.slider_wrapper{
+    background: url(../images/home_hifi_sectionbg_1.png);
+    background-color: #1F1F1F;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 740px;
+    overflow: hidden;
+    background-position: center bottom;
+}
+.slider_wrapper img{}
+.slider{
+    position: relative;
+}
+.slider_text{
+    display: block;
+    width: 350px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.slider_text h1{
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.slider_text h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #AEAEAE;
+}
+.slider_text p{
+    font-family: open sans, sans-serif;
+    color: #878787;
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 40px;
+}
+.slider_img{
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.slider_img img{
+    max-width: 100%;
+}
+.text_section_wrapper{
+    background: #F4F4F4;
+}
+.text_section{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.text_section h1{
+    font-family: lato;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+}
+.text_section pre{
+    font-family: latoR;
+    font-size: 23px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #AEAEAE;
+}
+.text_section ul{
+    margin-top: 50px;
+}
+.text_section ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.text_section ul li a{
+    font-family: lato;
+    text-shadow: none;
+    font-weight: 700;
+    color: #7f672d;
+    text-decoration: none;
+    letter-spacing: 0;
+    border-bottom: 2px solid rgba(192, 192, 192, 0.42);
+    padding-bottom: 10px;
+}
+.text_section ul li a:hover{}
+.portfolio_wrapper{
+    margin-top: 120px;
+    background: url(../images/pb.png);
+    overflow: hidden;
+    background-position: center bottom;
+    margin-bottom: 200px;
+}
+.portfolio{}
+.portfolio_text{
+    width: 30%;
+    float: left;
+}
+.portfolio_text h1{
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #1f1f1f;
+}
+.portfolio_text h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-family: latoR;
+    color: #515151;
+    margin-top: 30px;
+}
+.portfolio_text p{
+    margin-top: 35px;
+}
+.portfolio_text p a{
+    font-family: latoR;
+    font-size: 16px;
+    text-decoration: none;
+    color: #7f672d;
+}
+.portfolio_text p a:hover{
+    text-decoration: underline;
+}
+.portfolio_img{
+    float: left;
+    overflow: hidden;
+    width: 65%;
+    margin-left: 60px;
+    text-align: center;
+}
+.portfolio_img_content{
+    width: 45%;
+    float: left;
+    margin-left: 35px;
+}
+.portfolio_img_content img{
+    max-width: 100%;
+    border: 3px solid rgba(192, 192, 192, 0.11);
+    transition: all 1s;
+}
+.portfolio_img_content img:hover{
+    transform: translateX(1px) scale(.8);
+    
+}
+.portfolio_img_content h1{
+    margin: 10px 0;
+}
+.portfolio_img_content h1  a{
+    font-family: lato;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #515151;
+    text-decoration: none;
+}
+.portfolio_img_content h1  a:hover{
+    
+}
+.portfolio_img_content  p{
+    font-family: latoR;
+    color: #9b8143;
+    margin-bottom: 20px;
+}
+.portfolio_button{
+    margin-top: 100px;
+    float: left;
+}
+.portfolio_button p{
+    margin-bottom: 20px;
+}
+.portfolio_button p a{
+    font-family: latoR;
+    color: #9b8143;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 332px;
+    border: 2px solid #9b8143;
+    background: white;
+    transition: all .5s;
+    border-radius: 3px;
+}
+.portfolio_button p a:hover{
+    background: #9b8143;
+    color: white;
+}
+.blog_wrapper{
+    background-image: url(../images/guiter.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+.blog{}
+.blog h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 130px;
+}
+.blog_block{
+    width: 32%;
+    display: inline-block;
+    margin-top: 75px;
+    margin-right: 12px;
+}
+.blog_img{
+    float: left;
+}
+.blog_img img{
+    max-width: 100%;
+}
+.blog_text{
+    width: 60%;
+    display: block;
+    float: right;
+}
+.blog_text h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+.blog_text p{
+    font-family: open sans,sans-serif;
+    color: #9e9e9e;
+    font-size: 13px;
+    line-height: 23px;
+}
+.social_wrapper{
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.social{}
+.social h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #515151;
+    float: left;
+    margin-left: 26%;
+}
+.social p{
+    width: 25%;
+    font-family: open sans, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 22px;
+    float: left;
+    color: #9e9e9e;
+    margin-left: 75px;
+}
+.social_nav{
+    float: right;
+}
+.social_nav ul{}
+.social_nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social_nav ul li a{}
+.social_nav ul li a img{
+    max-width: 35px;
+}
+.footer_wrapper{
+    background: #F4F4F4;
+    overflow: hidden;
+}
+.footer{
+    margin-top: 80px;
+}
+.footer_block{
+    width: 28%;
+    float: left;
+}
+
+.footer > .footer_block:first-child{
+    margin-right: 8%;
+}
+.footer > .footer_block:last-child{
+    float: right;
+}
+.footer_block h4{
+    color: #1f1f1f;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+.footer_block img{}
+.footer_block p{
+    margin-top: 25px;
+    font-family: open sans,sans-serif;
+    color: #9e9e9e;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer_block p a{
+    color: #585858;
+}
+.footer_block p a:hover{
+    text-decoration: underline;
+}
+.bottom_footer_wrapper{
+    background: #F4F4F4;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.bottom_footer{}
+.bottom_footer p{
+    text-align: center;
+    font-family: open sans,sans-serif;
+    color: #9e9e9e;
+    font-size: 13px;
+}
+.bottom_footer p a{
+    color: #585858;
+    text-decoration: none;
+}
+.bottom_footer p a:hover{
+    text-decoration: underline;
+}
